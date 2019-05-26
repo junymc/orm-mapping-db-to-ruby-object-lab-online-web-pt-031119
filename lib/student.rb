@@ -99,6 +99,7 @@ class Student
     SQL
     DB[:conn].execute(sql).map do |x|
       self.new_from_db(x)
+    end
   end
 
 end
